@@ -1,0 +1,28 @@
+
+{%extends 'base.html' %}
+
+{%block title %} Home {% endblock %}
+
+
+{%block content %}
+
+<h1>home page, página inicial, teste do block</h1>
+
+{{text}}
+{% for nome in nomes %}
+    <ul>
+        <li>{{nome}}</li>
+    </ul>
+{%endfor %}
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+
+{% endblock %}
